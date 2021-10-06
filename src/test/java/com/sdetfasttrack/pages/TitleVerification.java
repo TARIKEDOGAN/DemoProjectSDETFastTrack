@@ -24,7 +24,6 @@ public class TitleVerification {
         return Driver.getDriver().getTitle();
     }
 
-
     //TC #2: Back and forth navigation
     //1- Open a chrome browser
     //2- Go to: https://google.com
