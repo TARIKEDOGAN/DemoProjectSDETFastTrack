@@ -1,13 +1,28 @@
 package com.sdetfasttrack.pages;
 
-public class TitleVerification {
-    //TC #1: Facebook Title Verification
+import com.sdetfasttrack.utilities.Driver;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
-    //1. Open Chrome browser
-    //2. Go to https://www.facebook.com
-    //3. Verify title:
-    //Expected: Facebook - Log In or Sign Up
-    //Actual: we need to get from browser using selenium
+public class TitleVerification {
+    public TitleVerification(){
+        PageFactory.initElements(Driver.getDriver(),this);
+    }
+  @FindBy(xpath = "(//a[.='Gmail'])[1]")
+    public WebElement gmailLinkButton;
+
+    @FindBy(name = "q")
+    private WebElement searchLink;
+//private final CustomElement=new CustomElement("BUTTON",WebElement)
+    public void searchApple(){
+        searchLink.sendKeys("apple"+ Keys.ENTER);
+    }
+
+    public String getTitle(){
+        return Driver.getDriver().getTitle();
+    }
 
 
     //TC #2: Back and forth navigation
