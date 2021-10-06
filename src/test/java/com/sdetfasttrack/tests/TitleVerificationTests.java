@@ -3,7 +3,6 @@ package com.sdetfasttrack.tests;
 import com.sdetfasttrack.pages.TitleVerification;
 import com.sdetfasttrack.utilities.Driver;
 import org.testng.annotations.Test;
-
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
@@ -12,7 +11,6 @@ TitleVerification titleVerification=new TitleVerification();
     @Test
     public void testFacebookTitle(){
         //TC #1: Facebook Title Verification
-
         //1. Open Chrome browser
         //2. Go to https://www.facebook.com
         Driver.getDriver().get("https://www.facebook.com");
