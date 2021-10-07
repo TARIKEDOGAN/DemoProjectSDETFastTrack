@@ -9,7 +9,7 @@ public class DropDownPage {
     //5. Verify final selected option is California.
 
     //TC#2
-    //Select “December 1st, 1921” and verify it is selected.
+    //Select “December 1st, 1950g” and verify it is selected.
     //1. Go to http://practice.cybertekschool.com/dropdown
     //2. Select Year --> by visible text
     //3. Select Month -->  by value
