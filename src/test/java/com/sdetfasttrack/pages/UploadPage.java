@@ -1,6 +1,37 @@
 package com.sdetfasttrack.pages;
 
+import com.sdetfasttrack.utilities.Driver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import java.util.List;
+
 public class UploadPage {
+    public UploadPage(){
+        PageFactory.initElements(Driver.getDriver(),this);
+    }
+
+    @FindBy(id = "file-upload")
+    public WebElement uploadFile;
+
+    @FindBy(id = "file-submit")
+    public WebElement submitFile;
+
+    @FindBy(id = "uploaded-files")
+    public WebElement uploadedFileExt;
+
+    @FindBy(xpath = "//h3[.='File Uploaded!']")
+    public WebElement uploadMessage;
+
+
+    @FindBy(id = "textbox")
+    public WebElement enterText;
+
+    @FindBy(xpath = "//div[@class='example']/a")
+    public List<WebElement> eachFile;
+
+
 
     //1. Go to http://practice.cybertekschool.com/upload
     //2.Find any file that is not too big in size. And get the path of the file.
