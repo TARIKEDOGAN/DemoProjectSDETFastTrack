@@ -14,7 +14,7 @@ public class SynchronizationPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    @FindBy(xpath = "//div[@id='start']")
+    @FindBy(xpath = "//button[.='Start']")
     public WebElement startButton;
 
     @FindBy(id = "username")
@@ -30,6 +30,11 @@ public class SynchronizationPage {
     public WebElement message;
 
 
+    @FindBy(xpath = "//strong[.='Done!']")
+    public WebElement doneMessage;
+
+    @FindBy(xpath = "//img[@class='rounded mx-auto d-block']")
+    public WebElement image;
 
     //TC#1
     //1. Go to http://practice.cybertekschool.com/dynamic_loading/1
