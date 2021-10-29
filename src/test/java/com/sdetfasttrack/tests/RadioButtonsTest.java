@@ -9,9 +9,9 @@ import static org.testng.Assert.assertTrue;
 
 public class RadioButtonsTest {
     RadioButtonPage radioButtonPage =new RadioButtonPage();
+
     @Test
     public void radioButtonTest1(){
-
         //1.GO TO: https://www.seleniumeasy.com/test/basic-radiobutton-demo.html
         Driver.getDriver().get("https://www.seleniumeasy.com/test/basic-radiobutton-demo.html");
 
